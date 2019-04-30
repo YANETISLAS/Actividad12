@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:orientation="vertical"
+    tools:context=".Activity_insert">
+
+    <TextView
+        android:id="@+id/tv_activity_title_ai"
+        android:text="insert_client"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_nombre_ai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/et_nombre_ai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tv_apellido_materno_ai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mother_last_name"
+                android:textColor="@color/colorPrimary" />
+            <EditText
+                android:id="@+id/et_apellido_paterno_ai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/father_last_name"
+                android:inputType="text"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tv_apellido_paterno_ai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/father_last_name"
+                android:textColor="@color/colorPrimary" />
+
+
+            <EditText
+                android:id="@+id/et_apellido_materno_ai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mother_last_name"
+                android:inputType="text"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tv_telefono_ai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/telephone"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/et_telefono_ai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/telephone"
+                android:inputType="phone"
+                android:textColor="@color/colorAccent" />
+
+
+            <TextView
+                android:id="@+id/tv_email_ai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="text"
+                android:textColor="@color/colorAccent" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_editar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:onClick="btn_insertOnClick"
+            android:text="insert" />
+
+    </LinearLayout>
+</LinearLayout>
